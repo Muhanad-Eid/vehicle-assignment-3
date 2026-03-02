@@ -11,7 +11,7 @@ namespace Vehicle_Management_System
         }
         public virtual double CalculateFuelConsumption(double distance)
         {
-            return distance;
+            return distance*10;
         }
 
         public virtual void Start()
@@ -22,9 +22,9 @@ namespace Vehicle_Management_System
 
         public abstract void Stop();
         public  string Brand { get;set; }
-        public string Log(string message) 
-        { 
-        return $"[{DateTime.Now}] {message}";
+        public void Log(string message) 
+        {
+            Console.WriteLine($"[{DateTime.Now}] {message}");
         }
 
     }

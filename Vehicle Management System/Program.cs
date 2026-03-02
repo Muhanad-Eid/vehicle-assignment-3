@@ -10,6 +10,7 @@ namespace Vehicle_Management_System
             Console.WriteLine();
             car.Stop();
             car.Start();
+            car.Log("This is a log message");
             Console.WriteLine(car.CalculateFuelConsumption(10));
             bike.Stop();
             bike.Start();

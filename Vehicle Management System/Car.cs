@@ -15,8 +15,7 @@ namespace Vehicle_Management_System
         }
         public override double CalculateFuelConsumption(double distance)
         {
-            distance = distance / 100;
-            return distance;
+            return base.CalculateFuelConsumption(distance)*1.1;
         }
     }
 }
